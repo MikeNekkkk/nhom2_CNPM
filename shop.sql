@@ -1,120 +1,9 @@
--- phpMyAdmin SQL Dump
--- version 4.0.4.1
--- http://www.phpmyadmin.net
---
--- Host: localhost
--- Generation Time: Dec 26, 2013 at 06:56 AM
--- Server version: 5.6.11
--- PHP Version: 5.5.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Database: `shop`
---
 CREATE DATABASE IF NOT EXISTS `shop` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `shop`;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `giohang`
---
-
-CREATE TABLE IF NOT EXISTS `giohang` (
-  `id_giohang` int(10) NOT NULL AUTO_INCREMENT,
-  `id` int(10) NOT NULL,
-  `user` varchar(255) NOT NULL,
-  `soluong` int(10) NOT NULL,
-  `tinhtrang` text NOT NULL,
-  `ngaydat` datetime NOT NULL,
-  PRIMARY KEY (`id_giohang`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=151 ;
-
---
--- Dumping data for table `giohang`
---
-
-INSERT INTO `giohang` (`id_giohang`, `id`, `user`, `soluong`, `tinhtrang`, `ngaydat`) VALUES
-(138, 71368668, 'phuong', 10, 'damua', '2013-12-20 10:05:14'),
-(139, 71368666, 'phuong', 1, 'damua', '2013-12-20 10:09:47'),
-(149, 71368667, 'xuanquocqn', 1, 'dathang', '2013-12-25 17:42:32'),
-(141, 71368667, 'admin', 1, 'damua', '2013-12-20 10:16:52'),
-(142, 71368671, 'admin', 2, 'damua', '2013-12-20 10:16:52'),
-(143, 71368671, 'xuanquocqn', 1, 'damua', '2013-12-21 12:06:24'),
-(150, 71368666, 'phuongle', 2, 'dathang', '2013-12-26 02:32:50'),
-(146, 914362335, 'xuanquocqn', 1, 'dathang', '2013-12-22 12:32:52');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hoadon`
---
-
-CREATE TABLE IF NOT EXISTS `hoadon` (
-  `id_hoadon` int(10) NOT NULL AUTO_INCREMENT,
-  `hoten` varchar(255) NOT NULL,
-  `diachi` text NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `dienthoai` int(20) NOT NULL,
-  `fax` int(20) NOT NULL,
-  `cty` varchar(255) NOT NULL,
-  `id` varchar(10) NOT NULL,
-  `soluong` int(10) NOT NULL,
-  `tongtien` float NOT NULL,
-  `ngaydat` datetime NOT NULL,
-  `tinhtrang` text NOT NULL,
-  PRIMARY KEY (`id_hoadon`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=36 ;
-
---
--- Dumping data for table `hoadon`
---
-
-INSERT INTO `hoadon` (`id_hoadon`, `hoten`, `diachi`, `email`, `dienthoai`, `fax`, `cty`, `id`, `soluong`, `tongtien`, `ngaydat`, `tinhtrang`) VALUES
-(32, 'Nguyễn Xuân Quốc', 'Quảng Ngãi', 'xuanquocqn@gmail.com', 1657990372, 25, '', '7', 7, 108220000, '2013-12-21 12:32:15', 'damua'),
-(33, 'Lê Thị Phượng', 'Điện Ngọc - Quảng Nam', 'phuongle.qn.23@gmail.com', 1657990337, 0, 'VIETHANIT', '98', 3, 705000, '2013-12-22 13:57:08', 'dathang'),
-(34, 'Nguyễn Phương Tâm', 'Đà Nẵng', 'phuongtamdn@gmail.com', 2147483647, 0, '', '71368671', 1, 37000000, '2013-12-25 04:44:54', 'dathang'),
-(35, 'Nguyễn Phương Tâm', 'Đà Nẵng', 'phuongtamdn@gmail.com', 2147483647, 0, '', '71368670', 2, 42000000, '2013-12-25 04:44:54', 'dathang');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `lienhe`
---
-
-CREATE TABLE IF NOT EXISTS `lienhe` (
-  `id_lienhe` int(10) NOT NULL AUTO_INCREMENT,
-  `hoten` text NOT NULL,
-  `cty` text NOT NULL,
-  `email` text NOT NULL,
-  `dienthoai` int(20) NOT NULL,
-  `fax` int(20) NOT NULL,
-  `diachi` text NOT NULL,
-  `noidung` text NOT NULL,
-  `ngaylienhe` datetime NOT NULL,
-  PRIMARY KEY (`id_lienhe`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
-
---
--- Dumping data for table `lienhe`
---
-
-INSERT INTO `lienhe` (`id_lienhe`, `hoten`, `cty`, `email`, `dienthoai`, `fax`, `diachi`, `noidung`, `ngaylienhe`) VALUES
-(14, 'Nguyễn Xuân Quốc', 'VIETHANIT', 'xuanquocqn@gmail.com', 1657990372, 2345245, 'đà nẵng', 'Đề nghị nhân viên phục vụ có thái độ tốt hơn đối với khách hàng', '2013-12-20 09:19:30');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `loaisanpham`
---
 
 CREATE TABLE IF NOT EXISTS `loaisanpham` (
   `id_loai` int(10) NOT NULL,
@@ -123,10 +12,6 @@ CREATE TABLE IF NOT EXISTS `loaisanpham` (
   `ghichu` varchar(255) NOT NULL,
   PRIMARY KEY (`id_loai`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `loaisanpham`
---
 
 INSERT INTO `loaisanpham` (`id_loai`, `id_nhom`, `tenloaisp`, `ghichu`) VALUES
 (15, 2, 'Loa Laptop', ''),
@@ -156,19 +41,10 @@ CREATE TABLE IF NOT EXISTS `nhomsanpham` (
   PRIMARY KEY (`id_nhom`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `nhomsanpham`
---
 
 INSERT INTO `nhomsanpham` (`id_nhom`, `tennhom`) VALUES
 (1, 'Laptop'),
 (2, 'Phụ kiện');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `sanpham`
---
 
 CREATE TABLE IF NOT EXISTS `sanpham` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
