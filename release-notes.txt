@@ -7,6 +7,11 @@
        kiểu dữ liệu : "utf8mb4_general_ci"
   4.2. Bấm vào ô "Nhập" trên màn hình
   4.3. chọn tệp : C:\xampp\htdocs\CK_CongNghePhanMem\shop.sql
-Mở trình duyệt và truy cập vào http://localhost:8888(cổng apache được hiển thị trên xampp) /CK_CongNghePhanMem/admincp
+5. vào đường dẫn C:\xampp\htdocs\CK_CongNghePhanMem\admincp\connect.php
+  $USER = "root";
+	$PASS = "maihuyenhi1";
+	$DB = "shop";
+sửa 3 dòng trên phù hợp với máy của bạn
+6. Mở trình duyệt và truy cập vào http://localhost:8888(cổng apache được hiển thị trên xampp) /CK_CongNghePhanMem/admincp
   Tên đăng nhập: Admin
   Mật khẩu:maihuyen
