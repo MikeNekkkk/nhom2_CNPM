@@ -126,10 +126,10 @@ CREATE TABLE IF NOT EXISTS `thanhvien` (
 --
 
 INSERT INTO `thanhvien` (`hoten`, `diachi`, `email`, `dienthoai`, `user`, `pass`, `hieuluc`, `capquyen`) VALUES
-('Admin', 'Đà Nẵng', 'xuanquocqn@gmail.com', 1657990372, 'Admin', 'e74c9440c8727c5146cb44c030c633a4', 1, 1),
-('Mai Huyền', 'Quảng Ngãi', 'maihuyen@gmail.com', 1657990372, 'maihuyen', 'e74c9440c8727c5146cb44c030c633a4', 1, 3),
-('Ngô Trần Khánh Phương', 'Quảng Nam', 'khanhphuong@gmail.com', 1657993024, 'khanhphuong', 'ae3b1c33da7f05b095ae5601b2c34e7a', 1, 3),
-('Nguyễn Thị Hoài Linh', 'Da Nang', 'hoailinh@gmail.com', 1657990372, 'hoailinh', '9cd45d8a70014c33006f1fb36516b3b3', 1, 3);
+('Admin', 'Đà Nẵng', 'maihuyen@gmail.com', 1657990372, 'Admin', 'e74c9440c8727c5146cb44c030c633a4', 1, 1),
+('Mai Huyền', 'Đà Nẵng', 'maihuyen@gmail.com', 1657990372, 'maihuyen', 'e74c9440c8727c5146cb44c030c633a4', 1, 3),
+('Ngô Trần Khánh Phương', 'Đà Nẵng', 'khanhphuong@gmail.com', 1657993024, 'khanhphuong', 'ae3b1c33da7f05b095ae5601b2c34e7a', 1, 3),
+('Nguyễn Thị Hoài Linh', 'Đà Nẵng', 'hoailinh@gmail.com', 1657990372, 'hoailinh', '9cd45d8a70014c33006f1fb36516b3b3', 1, 3);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
