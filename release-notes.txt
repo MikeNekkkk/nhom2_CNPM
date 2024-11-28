@@ -1,0 +1,12 @@
+1. Trước hết, bạn cần cài đặt PHP trên máy tính nếu chưa cài.
+2. Mở XAMPP Control Panel và khởi động Apache.
+3. Di chuyển mã nguồn PHP vào thư mục htdocs trong thư mục cài đặt XAMPP (thường là C:\xampp\htdocs).
+4. Mở trình duyệt và truy cập vào http://localhost:(cổng apache được hiển thị trên xampp)/phpmyadmin/
+  4.1. Tạo CSDL mới : 
+       tên :"shop"
+       kiểu dữ liệu : "utf8mb4_general_ci"
+  4.2. Bấm vào ô "Nhập" trên màn hình
+  4.3. chọn tệp : C:\xampp\htdocs\CK_CongNghePhanMem\shop.sql
+Mở trình duyệt và truy cập vào http://localhost:8888(cổng apache được hiển thị trên xampp) /CK_CongNghePhanMem/admincp
+  Tên đăng nhập: Admin
+  Mật khẩu:maihuyen
