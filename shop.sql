@@ -2,8 +2,6 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-CREATE DATABASE IF NOT EXISTS `shop` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `shop`;
 
 CREATE TABLE IF NOT EXISTS `loaisanpham` (
   `id_loai` int(10) NOT NULL,
@@ -29,11 +27,6 @@ INSERT INTO `loaisanpham` (`id_loai`, `id_nhom`, `tenloaisp`, `ghichu`) VALUES
 (1, 1, 'Apple (Macbook)', ''),
 (2, 1, 'Acer', '');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `nhomsanpham`
---
 
 CREATE TABLE IF NOT EXISTS `nhomsanpham` (
   `id_nhom` int(10) NOT NULL,
@@ -59,9 +52,7 @@ CREATE TABLE IF NOT EXISTS `sanpham` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2147483648 ;
 
---
--- Dumping data for table `sanpham`
---
+
 
 INSERT INTO `sanpham` (`id`, `id_loai`, `tensp`, `mota`, `hinh`, `gia`, `ghichu`, `soluongban`, `id_menu`) VALUES
 (71368666, 7, 'Samsung NP540U3C', '<p>&nbsp;</p>\r\n<h2 style="margin: 0px; padding: 0px; word-wrap: break-word; font-size: 38px; line-height: 38px; font-weight: normal; font-family: PFSquareSansProMedium, Arial, sans-serif;">C&ocirc;ng nghệ touch &ldquo;si&ecirc;u mượt&rdquo;, kết nối hữu hiệu với Ultrabook touch từ Samsung</h2>\r\n<h3 style="margin: 0px 0px 8px; padding: 0px; word-wrap: break-word; font-size: 12px; line-height: 1.2; color: rgb(1, 1, 1); font-family: Arial, sans-serif;">rải nghiệm &ldquo;đa chạm&rdquo; trọn vẹn</h3>\r\n<p style="margin: 0px 0px 15px; padding: 0px; word-wrap: break-word; line-height: 1.5; font-family: Arial, sans-serif;">Chỉ cần &ldquo;chạm nhẹ v&agrave; trải nghiệm ngay&rdquo; với Samsung Series 5 Ultra. Trải nghiệm th&uacute; vị n&agrave;y được thực hiện dễ d&agrave;ng tr&ecirc;n m&agrave;n h&igrave;nh 13.3in HD Super Bright nhờ c&ocirc;ng nghệ tương t&aacute;c điểm của Win 8, cảm gi&aacute;c chạm &ldquo;mượt&rdquo; m&agrave; v&agrave; ho&agrave;n ho&agrave;n được sử dụng hiệu quả tr&ecirc;n tất cả 10 ng&oacute;n tay. Bạn sẽ tận hưởng cảm gi&aacute;c lướt nhẹ s&agrave;nh điệu, d&ugrave; l&agrave;m việc, hay giải tr&iacute; cả ng&agrave;y d&agrave;i với c&aacute;c ứng dụng (apps) v&agrave; những tr&ograve; chơi hấp dẫn nhất.</p>\r\n<h3 style="margin: 0px 0px 8px; padding: 0px; word-wrap: break-word; font-size: 12px; line-height: 1.2; color: rgb(1, 1, 1); font-family: Arial, sans-serif;">Lưu trữ lớn cho mọi thứ bạn cần</h3>\r\n<p style="margin: 0px 0px 15px; padding: 0px; word-wrap: break-word; line-height: 1.5; font-family: Arial, sans-serif;">Việc sở hữu một chiếc notebook di động si&ecirc;u mỏng trước giờ lu&ocirc;n đồng nghĩa với việc bạn phải &ldquo; hy sinh&rdquo; một lượng lưu trữ đ&aacute;ng kể. Tuy nhi&ecirc;n, notebook si&ecirc;u mỏng Samsung Series 5 ULTRA lại được thiết kế với dung lượng lưu trữ khổng lồ. Ổ đĩa cứng với khả năng lưu trữ dữ liệu l&ecirc;n đến 500GB gi&uacute;p người d&ugrave;ng tận hưởng &acirc;m nhạc, phim ảnh thỏa th&iacute;ch.</p>\r\n<h3 style="margin: 0px 0px 8px; padding: 0px; word-wrap: break-word; font-size: 12px; line-height: 1.2; color: rgb(1, 1, 1); font-family: Arial, sans-serif;">Thiết kế si&ecirc;u di động</h3>\r\n<p style="margin: 0px 0px 15px; padding: 0px; word-wrap: break-word; line-height: 1.5; font-family: Arial, sans-serif;">Với những người thường xuy&ecirc;n di chuyển, việc phải mang theo b&ecirc;n người một chiếc notebook cồng kềnh bao giờ cũng l&agrave; một g&aacute;nh nặng lớn.Thấu hiểu điều đ&oacute;, Samsung mang đến bạn Series 5 ULTRA c&oacute; thiết kế rất mỏng (19.9mm), nhẹ (1.69 kg) - th&iacute;ch hợp cho cuộc sống năng động h&agrave;ng ng&agrave;y của bạn. Với Samsung Series 5 ULTRA, bạn sẽ lu&ocirc;n c&oacute; văn ph&ograve;ng của m&igrave;nh, ở mọi l&uacute;c, mọi nơi.</p>', 'SamsungNP540U3C.jpg', 26497000, 'new', 1, 0),
@@ -103,11 +94,6 @@ INSERT INTO `sanpham` (`id`, `id_loai`, `tensp`, `mota`, `hinh`, `gia`, `ghichu`
 (30, 13, 'LOGITECH M187', '', 'LOGITECHM187.jpg', 298000, 'hienthi', 0, 0),
 (98, 13, 'Vtrack 800', '', 'Vtrack800.jpg', 235000, 'hienthi', 0, 0);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `thanhvien`
---
 
 CREATE TABLE IF NOT EXISTS `thanhvien` (
   `hoten` varchar(255) NOT NULL,
@@ -121,16 +107,9 @@ CREATE TABLE IF NOT EXISTS `thanhvien` (
   PRIMARY KEY (`user`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `thanhvien`
---
-
 INSERT INTO `thanhvien` (`hoten`, `diachi`, `email`, `dienthoai`, `user`, `pass`, `hieuluc`, `capquyen`) VALUES
 ('Admin', 'Đà Nẵng', 'maihuyen@gmail.com', 1657990372, 'Admin', 'e74c9440c8727c5146cb44c030c633a4', 1, 1),
 ('Mai Huyền', 'Đà Nẵng', 'maihuyen@gmail.com', 1657990372, 'maihuyen', 'e74c9440c8727c5146cb44c030c633a4', 1, 3),
 ('Ngô Trần Khánh Phương', 'Đà Nẵng', 'khanhphuong@gmail.com', 1657993024, 'khanhphuong', 'ae3b1c33da7f05b095ae5601b2c34e7a', 1, 3),
 ('Nguyễn Thị Hoài Linh', 'Đà Nẵng', 'hoailinh@gmail.com', 1657990372, 'hoailinh', '9cd45d8a70014c33006f1fb36516b3b3', 1, 3);
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
