@@ -1,0 +1,19 @@
+Quản lý sản phẩm
+Mô tả: Là một Admin, tôi muốn quản lý danh sách sản phẩm để có thể thêm, sửa, xóa, và đảm bảo thông tin luôn chính xác.
+
+Tiêu Chí Chấp Nhận:
+
+Xem danh sách sản phẩm:
+Tôi có thể xem danh sách tất cả các sản phẩm hiện có trên hệ thống.
+
+Thêm sản phẩm mới:
+Tôi có thể nhập thông tin sản phẩm bao gồm tên, mô tả, giá và hình ảnh, sau đó thêm sản phẩm mới vào danh sách.
+
+Sửa thông tin sản phẩm:
+Tôi có thể chỉnh sửa các thông tin như tên, mô tả, giá hoặc hình ảnh của sản phẩm đã có.
+
+Xóa sản phẩm:
+Tôi có thể chọn xóa những sản phẩm không còn cung cấp và danh sách sẽ được cập nhật.
+
+Thông báo và cập nhật danh sách:
+Hệ thống sẽ hiển thị thông báo sau mỗi hành động (thêm, sửa, xóa) và tự động làm mới danh sách sản phẩm.
